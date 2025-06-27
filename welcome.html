@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Hub Slider</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      height: 100%; width: 100%;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      background: #111;
+      color: white;
+    }
+    .slider {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    .slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+     /* background: linear-gradient(180deg rgba(0,0,0,0.6) 0%rgba(0,0,0,0.8) 100%);
+      z-index: 1;*/
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: clamp(2rem, 6vw, 4rem);
+      margin-bottom: 1rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(255,45,85,0.8);
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 2.5rem;
+      letter-spacing: 1.2px;
+      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+    .btn-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    a.btn {
+      padding: 16px 48px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+      background: rgba(255 255 255 / 0.15);
+      border: 2px solid white;
+      cursor: pointer;
+      transition: all 0.35s ease;
+      backdrop-filter: blur(6px);
+    }
+    a.btn:hover {
+      background: white;
+      color: #ff2d55;
+      border-color: #ff2d55;
+      box-shadow: 0 0 12px #ff2d55;
+      transform: scale(1.05);
+    }
+    .nav-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+      z-index: 3;
+    }
+    .nav-dots button {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .nav-dots button.active {
+      background: #ff2d55;
+      transform: scale(1.3);
+      box-shadow: 0 0 12px #ff2d55;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider">
+  <!-- Slide 1 -->
+  <div class="slide active" style="background-image: url('./image/first-img.jpeg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Elegant Styles</h1>
+      <p>Discover the timeless elegance of modern fashion trends.</p>
+      <div class="btn-wrapper">
+        <a href="./index.html" class="btn">Explore Collections</a>
+        <a href="./contact.html" class="btn">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide" style="background-image: url('./image/second-img.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Modern Looks</h1>
+      <p>Stay ahead with today’s trending fashion statements.</p>
+      <div class="btn-wrapper">
+        <a href="./index.html" class="btn">Explore Now</a>
+        <a href="./contact.html" class="btn">Join Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide" style="background-image: url('./image/third-img.webp');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Luxury Wear</h1>
+      <p>Embrace the luxury and style with our top collections.</p>
+      <div class="btn-wrapper">
+        <a href="./index.html" class="btn">View More</a>
+        <a href="./contact.html" class="btn">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-dots">
+  <button class="active"></button>
+  <button></button>
+  <button></button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.nav-dots button');
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      // Remove active classes
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(btn => btn.classList.remove('active'));
+
+      // Add to selected
+      slides[index].classList.add('active');
+      dot.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

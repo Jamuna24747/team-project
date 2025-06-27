@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .left-content {
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #0ff;
+      text-align: center;
+    }
+
+    .left-content img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    .left-content h2 {
+      margin: 30px 0 12px;
+      font-size: 28px;
+      text-shadow: 0 0 8px #0ff;
+    }
+
+    .left-content p {
+      font-size: 16px;
+      color: #a0f0f0;
+      line-height: 1.4;
+    }
+
+    .contact-container {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #0ff;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .contact-container h1 {
+      margin-bottom: 30px;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #ccc;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2b2b2b;
+      color: #fff;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #0ff;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00e6e6;
+    }
+
+    /* Footer styles */
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 3rem 1.5rem;
+      width: 100%;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      text-align: left;
+    }
+
+    .footer-col h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+      color: #0ff;
+    }
+
+    .social {
+      display: flex;
+      gap: 1.4rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .social a {
+      color: #ccc;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+
+    .social a:hover {
+      color: #0ff;
+    }
+
+    @media (max-width: 900px) {
+      .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-wrapper">
+    <div class="left-content">
+      <img src="./image/contact-img.jpg" alt="Contact Image" />
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or want to reach out, please fill the form. We would love to hear from you!</p>
+    </div>
+
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Brave Search Premium</a></li>
+          <li><a href="#">Brave Search Help</a></li>
+          <li><a href="#">Transparency Report</a></li>
+          <li><a href="#">Report a Security Issue</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="#">Brave Browser</a></li>
+          <li><a href="#">Brave Wallet</a></li>
+          <li><a href="#">Brave Firewall + VPN</a></li>
+          <li><a href="#">Brave News</a></li>
+          <li><a href="#">Brave Search API</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-inner" style="padding-top: 0;">
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

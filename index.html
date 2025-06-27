@@ -1,14 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fashion</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <!-- Boxicons CDN -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
+
+
 
 <header>
   <nav class="navbar">
@@ -18,21 +25,30 @@
       <span></span>
     </div>
     <div class="logo-img">
-      <img src="./image/girl-logo.jpg" alt="logo" />
+      <img src="./image/girl-logo.jpg" alt="logo"/>
     </div>
 
     <ul class="nav-links" id="navlinks">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#member">Member</a></li>
-      <li><a href="#Our Patner">Our Patner</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+  <a href="#" id="shop-link">Shop <i class='bx bx-chevron-down'></i></a>
+  <ul class="dropdown-menu">
+    <li><a href="./shop.html">Shop All</a></li>
+    <li><a href="./occasion.html">Special</a></li>
+    <li><a href="./kids-girl.html">Kids - Girl</a></li>
+    <li><a href="./kids-boy.html">Kids - Boy</a></li>
+    <li><a href="./girls.html">Girls</a></li>
+    <li><a href="./boys.html">Boys</a></li>
+    <li><a href="./cultural.html">Cultural</a></li>
+  </ul>
+</li>
+      <li><a href="./member.html">Member</a></li>
+      <li><a href="./patner.html">Our Patner</a></li>
+      <li><a href="./contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
-
-
 
 <section class="home" id="home">
   <div class="home-text">
@@ -51,10 +67,10 @@
 
 <section class="about" id="about">
   <div class="about1">
-  <h1>👉You Can Visit Our About Page👈</h1>
+  <h1>👉You Can Visit Our  Page👈</h1>
   </div>
   <div class="about-container">
-    <img src="./image/back-groundpic.jpg" alt="About Image" class="about-img">
+    <img src="./image/back-groundpic.jpg" alt="About Image" class="about-img"/>
     <div class="about-text">
       <h4>About Us</h4>
       <h2>✨Designed with care & worn with confidence.✨</h2>
@@ -70,23 +86,365 @@
 </section>
 
 <section class="shop" id="shop">
-  <div class="heading">
-    <h2>Cloth Shop</h2>
-    <br>
-    <h3><i>💫 Perfect for weddings, parties, and special occasions because you deserves to shine.💫</i></h3>
+<section class="cloth" id="cloth">
+ <div class="headingg">
+    <h1>✨✨Cloth Shop✨✨</h1>
+ </div>
+  <div class="cloth-container">
+    <img src="./image/cloth-back.avif" alt="cloth" class="cloth-img" />
+    <div class="cloth-text">
+  <h4>Explore Our Collection</h4>
+   <h2><i>🌟Welcome to our Cloth Shop.🌟</i></h2>
+  <br>
+  <p><b>
+     Hello! This is my fancy cloth store which makes your day bright. At our Cloth Shop, we believe fashion should be fun, effortless, and uniquely you. Explore bold designs, seasonal favorites, and timeless pieces — all tailored to elevate your everyday wardrobe.
+    <br><br>
+    <strong>Fashion made for you.</strong> 🛒👗</b></p>
+    <a href="#shop" class="btn">Shop Now</a>
   </div>
+</div>
+</section>
 
   <div class="shop-container1">
+    <div class="box">
+      <div class="card">
+        <div class="card-fronts">
+          <img src="./image/front1.webp" alt="">
+          <h3>Short Sleeve Belted</h3>
+          <h6>Rs:3000</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back1.webp" alt="">
+          <h5>Available:XXS,XS,SM,L,XL</h5>
+          <br>
+        </div>
+      </div>
+    </div>
 
+<div class="box">
+      <div class="card">
+        <div class="card-fronts">
+          <img src="./image/front2.webp" alt="">
+          <h3>Patchwork Pant</h3>         
+          <h6>Rs:2000</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back2.webp" alt="">
+          <h5>Available:X,M,XL</h5>
+          <br>
+        </div>
+      </div>
+</div>
+
+
+<div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front3.webp" alt="">
+          <h3>Parachatue Skirt</h3>
+          <h6>Rs:2600</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back3.webp" alt="">
+          <h5>Available:SM,L,M</h5>
+          <br>
+        </div>
+      </div>
+</div>
+
+      <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front4.webp" alt="">
+          <h3>Jogger Pant</h3>
+          <h6>Rs:2200</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back4.webp" alt="">
+          <h5>Available:X,S ,M</h5>
+          <br>
+        </div>
+      </div>
+      </div>
+
+<div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front5.webp" alt="">
+          <h3>Denim Patch Pocket Pant</h3>
+          <h6>Rs:2600</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back5.webp" alt="">
+          <h5>Available:L,M,XL</h5>
+          <br>
+        </div>
+      </div>
+</div>
+
+      <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front7.webp" alt="">
+          <h3>Wrap Coat</h3>
+          <h6>Rs:2400</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back7.webp" alt="">
+          <h5>Available:XS,SM,L,M</h5>
+          <br>
+        </div>
+      </div>
+      </div>
+
+<div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front8.webp" alt="">
+          <h3>Lace Camisole </h3>
+          <h6>Rs:2300</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back8.webp" alt="">
+          <h5>Available:XS,SM,L,M</h5>
+          <br>
+        </div>
+      </div>
+</div>
+
+<div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front6.webp" alt="">
+          <h3>Strapless Column Dress</h3>
+          <h6>Rs:2500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back6.webp" alt="">
+          <h5>Available:XXS,XS,SM,L,XL</h5>
+          <br>
+        </div>
+      </div>
+</div>
+
+<div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front9.webp" alt="">
+          <h3>Hat</h3>
+          <h6>Rs:500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back9.webp" alt="">
+          <h5>Available:SM,L,</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front10.avif" alt="">
+          <h3>Roll Cuff Linen</h3>
+          <h6>Rs:1500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back10.avif" alt="">
+          <h5>Available:SM,L,XL</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front11.avif" alt="">
+          <h3>Vacation Linen dress</h3>
+          <h6>Rs:3500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back11.avif" alt="">
+          <h5>Available:XXL,SM,L,m</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front12.avif" alt="">
+          <h3>Stripe Snug fit</h3>
+          <h6>Rs:2500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back12.avif" alt="">
+          <h5>Available:SM, M,L,</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front13.avif" alt="">
+          <h3>Bow Fit</h3>
+          <h6>Rs:1200</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back13.avif" alt="">
+          <h5>Available:M,SM,L,</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+    <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front18.webp" alt="">
+          <h3>Logo Tie</h3>
+          <h6>Rs:500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back18.webp" alt="">
+          <h5>Available:SM,L,M</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front16.webp" alt="">
+          <h3>Standard Shirt</h3>
+          <h6>Rs:3500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back16.webp" alt="">
+          <h5>Available:SM,M,XL,L,</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front17.webp" alt="">
+          <h3> Boy's Tuxedos Pants</h3>
+          <h6>Rs:4500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back17.webp" alt="">
+           <h5>Available:XXL,M,SM,L,</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+ <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front14.avif" alt="">
+          <h3>Cherry Smocked dress</h3>
+          <h6>Rs:500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back14.avif" alt="">
+          <h5>Available:XXL,M,SM,L,</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front19.jpg" alt="">
+          <h3>Saree</h3>
+          <h6>Rs:3500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back19.jpg" alt="">
+          <h5>Available:SM,L,M</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+ <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front15.webp" alt="">
+          <h3>Stretch Mod Suit</h3>
+          <h6>Rs:1700</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back15.webp" alt="">
+          <h5>Available:M,SM,L,</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+
+  <div class="box">
+<div class="card">
+        <div class="card-fronts">
+          <img src="./image/front20.jpg" alt="">
+          <h3>Kurtha</h3>
+          <h6>Rs:2500</h6>
+          <i class="bx bxs-cart-add"></i>
+        </div>
+        <div class="card-backs">
+          <img src="./image/back20.jpg" alt="">
+          <h5>Available:SM,L,M</h5>
+          <br>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<section  class="shop1" id="shop1">
+<div class="heading">
+  <h2>👗Occasional Dress For Girls</h2>
+  <h3><i>💫 Perfect for weddings, parties, and special occasions because you deserves to shine.💫</i></h3>
+  <br>
+</div>
+  <div class="shop-container">
+    
    <div class="shop-box">
       <div class="shop-image">
-        <img src="./image/kurtha3.jpg"kurtha">
+        <img src="./image/kurtha3.jpg" alt="kurtha">
       </div>
       <h2>Kurtha</h2>
       <h3>Price: Rs.499</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
-
 
 <div class="shop-box">
       <div class="shop-image">
@@ -106,7 +464,7 @@
       <i class="bx bxs-cart-add"></i>
     </div>
 
- <div class="shop-box">
+ <div class="shop-box ">
       <div class="shop-image">
         <img src="./image/kurtha1.jpg" alt="kurtha">
       </div>
@@ -114,10 +472,11 @@
       <h3>Price: Rs.1499</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+    
 
 <div class="shop-box">
       <div class="shop-image">
-        <img src="./image/saree1.jpg" alt="saree">
+        <img src="./image/saree.webp" alt="saree">
       </div>
       <h2>Saree</h2>
       <h3>Price: Rs. 1550</h3>
@@ -150,7 +509,6 @@
       <h3>Price: Rs. 3000</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
-
 
     <div class="shop-box">
       <div class="shop-image">
@@ -191,18 +549,22 @@
   </div>
 </section>
 
-<section class="shop" id="shop">  
+
+<section class="shop2" id="shop2">  
   <div class="heading">
-    <h1>Kids Collection</h1>
+    <h2>👧 Kids' Clothing Collection🧒</h2>
     <br>
-    <h3>You can buy your favorite dresses from our shops</h3>
+     
+<h3><i>Explore our adorable and vibrant Kids' Clothing Collection designed to bring joy, comfort, and style to your little ones!<br></i></h3>
+<br>
+<img src="./image/kids-backg.jpg" alt="cloth" class="kid-img" />
+    <h1>For Kid's Girls</h1>
     <br>
-    <h2>For Girls</h2>
+    <h3>"Adorable outfits for your princess! 👑👗✨"</h3>
   </div>
 
   <div class="shop-container">
-
-    <div class="shop-box11">
+    <div class="shop-box">
       <div class="shop-img">
         <img src="./image/kid1.jpg" alt="Strapless">
       </div>
@@ -247,7 +609,6 @@
       <i class="bx bxs-cart-add"></i>
     </div>
 
-
     <div class="shop-box">
   <div class="shop-img">
     <img src="./image/kid6.jpg" alt="Skater dress">
@@ -255,9 +616,7 @@
   <h2>Skater dress</h2>
   <h3>Price: Rs. 2000</h3>
   <i class="bx bxs-cart-add"></i>
-<!-- Missing </div> here -->
 </div>
-
 
     <div class="shop-box">
       <div class="shop-img">
@@ -277,13 +636,18 @@
       <i class="bx bxs-cart-add"></i>
   </div>
   </div>
+<br><br>
+</section>
 
-<br>
 
+<section class="shop3" id="shop3">  
   <div class="heading">
-    <h2>For Boys</h2>
-  <div class="shop-container">
+    <h1>For Boys</h1>
+    <br>
+    <h3>"Twirl-ready looks for your little star! 🌟👑✨"</h3>
+  </div>
 
+  <div class="shop-container">
  <div class="shop-box">
       <div class="shop-img">
         <img src="./image/kidb1.jpg" alt="Christening dress">
@@ -292,7 +656,6 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
-
 
  <div class="shop-box">
       <div class="shop-img">
@@ -310,6 +673,7 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+
  <div class="shop-box">
       <div class="shop-img">
         <img src="./image/kidb4.jpg" alt="Sleeved Shirt">
@@ -318,6 +682,7 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+
  <div class="shop-box">
       <div class="shop-img">
         <img src="./image/kidb5.jpg" alt="Shirt-Pant">
@@ -326,6 +691,7 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+
  <div class="shop-box">
       <div class="shop-img">
         <img src="./image/kidb6.jpg" alt="Beige Waist Coat">
@@ -334,6 +700,7 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+
  <div class="shop-box">
       <div class="shop-img">
         <img src="./image/kidb7.jpg" alt="Baby-Waist Coat">
@@ -342,6 +709,7 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+
  <div class="shop-box">
       <div class="shop-img">
         <img src="./image/kidb8.jpg" alt="Coat-Pant">
@@ -350,20 +718,21 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+    </div>
 </section>
 
 
-<section class="shop">
+
+
+<section class="shop4" id="shop4">
   <div class="heading">
-    <h1></h1>
     <br>
-    <h3></h3>
+    <h2>🌟Modern Girls’ Clothing Collection 🌟</h2>
     <br>
-    <h2>For Girls</h2>
+    <h3>🎀Our modern girls'collections From stylish trench coats to cute cargo pants and vibrant dresses, every piece is designed to let girls express their unique personalities. 
+</h3>
   </div>
-
   <div class="shop-container">
-
     <div class="shop-box">
       <div class="shop-img">
         <img src="./image/girl1.jpg" alt="Trench-coat">
@@ -409,7 +778,6 @@
       <i class="bx bxs-cart-add"></i>
     </div>
 
-
     <div class="shop-box">
   <div class="shop-img">
     <img src="./image/girl6.jpg" alt=" T-shirt Pants">
@@ -418,7 +786,6 @@
   <h3>Price: Rs. 2200</h3>
   <i class="bx bxs-cart-add"></i>
 </div>
-
 
     <div class="shop-box">
       <div class="shop-img">
@@ -438,13 +805,18 @@
       <i class="bx bxs-cart-add"></i>
   </div>
   </div>
+</section>
 
-<br>
-
+<section class="shop5">
   <div class="heading">
-    <h2>For Boys</h2>
-  <div class="shop-container">
+    <br>
+    <h2>🧢 Modern Boy's Clothing Collection 🧢</h2>
+    <br>
+    <h3>🧥 Discover our modern boys' collection—where comfort meets confidence and cool style.</h3>
+  </div>
+  <br>
 
+  <div class="shop-container">
  <div class="shop-box">
       <div class="shop-img">
         <img src="./image/boy1.jpg" alt="Denim Jacket">
@@ -453,7 +825,6 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
-
 
  <div class="shop-box">
       <div class="shop-img">
@@ -511,32 +882,134 @@
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
+  </div>
 </section>
 
-
-
-<section class="shop">
+<section class="shop6">
   <div class="heading">
-    <h2>Cultural Dresses</h2>
+    <h2>🌺 Our Cultural Clothes Collection 🌺</h2>
     <br>
-    <h3>You can buy your favorite dresses from our shops</h3>
+    <h3>Celebrate tradition with style in our beautifully curated Cultural Clothes Collection.
+</h3>
   </div>
 
-  <div class="shop-container">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashion Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
 
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-text h2 {
+      font-size: 32px;
+      margin: 0 0 12px;
+    }
+
+    .hero-text a {
+      font-size: 16px;
+      text-decoration: underline;
+      color: #000;
+      font-weight: 600;
+    }
+
+    .hero-media {
+      flex: 1 1 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .hero-media img {
+      width: 950px;
+      height: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .hero-media button {
+      margin-top: 20px;
+      background: white;
+      border: 1px solid black;
+      padding: 10px 22px;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+
+    .hero-media button:hover {
+      background-color: #000;
+      color: white;
+      transition: 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+      }
+      .hero-media {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-section">
+    <!-- Centered heading and link -->
+    <div class="hero-text">
+      <h2>Tradition Meets Trend</h2>
+      <a href="#">Shop Cultural Dresses</a>
+    </div>
+
+    <!-- Image with button below it on right side -->
+    <div class="hero-media">
+      <img src="./image/cultural-sidepic.webp" alt="Bag Collection">
+      <button>Shop Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+  <div class="shop-container">
 <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/newar.jpg" alt="Newari Dress">
+        <img src="./image/newari.webp" alt="Newari Dress">
       </div>
       <h2>Newari Dress</h2>
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
 
-    
     <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/gurung.jpg" alt="Gurung Dress">
+        <img src="./image/gurung.webp" alt="Gurung Dress">
       </div>
       <h2>Gurung Dress</h2>
       <h3>Price: Rs. 5000</h3>
@@ -545,7 +1018,7 @@
 
     <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/tharu.jpg" alt="Tharu Dress">
+        <img src="./image/tharu.webp" alt="Tharu Dress">
       </div>
       <h2>Tharu Dress</h2>
       <h3>Price: Rs. 2000</h3>
@@ -554,7 +1027,7 @@
 
     <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/sherpa1.jpg" alt="Sherpa Dress">
+        <img src="./image/sherpa.webp" alt="Sherpa Dress">
       </div>
       <h2>Sherpa Dress</h2>
       <h3>Price: Rs. 5000</h3>
@@ -563,16 +1036,16 @@
 
     <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/bahun.jpg" alt="Nepali Dress">
+        <img src="./image/limbu.webp" alt="limbu Dress">
       </div>
-      <h2>Nepali Dress</h2>
+      <h2>Limbu Dress</h2>
       <h3>Price: Rs. 3500</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
 
     <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/tamang.jpg" alt="Tamang Dress">
+        <img src="./image/tamang.webp" alt="Tamang Dress">
       </div>
       <h2>Tamang Dress</h2>
       <h3>Price: Rs. 3500</h3>
@@ -581,140 +1054,116 @@
 
     <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/magars.jpg" alt="Magar Dress">
+        <img src="./image/magar.jpg" alt="Magar Dress">
       </div>
       <h2>Magar Dress</h2>
       <h3>Price: Rs. 2000</h3>
       <i class="bx bxs-cart-add"></i>
     </div>
 
-
     <div class="shop-box">
       <div class="shop-img">
-        <img src="./image/cheetri.jpg" alt="Chhetri Dress">
+        <img src="./image/chhetri.jpg" alt="Chhetri Dress">
       </div>
       <h2>Chhetri Dress</h2>
       <h3>Price: Rs. 3500</h3>
-      <i class="bx bxs-cart-add"></i>
+      <i class="bx bxs-cart-add"></i> 
     </div>
   </div>
 </section>
 
-
-<section class="member" id="member">
-  <div class="heading">
-    <h2>Our Members</h2>
-    <br>
-    <h3>Meet our professional team</h3>
-  </div>
-
-  <div class="member-container">
-    <div class="box">
-      <div class="card">
-        <div class="card-front">
-          <img src="./image/muna.jpg" alt="Jamuna">
-          <h2>Jamuna</h2>
-        </div>
-        <div class="card-back">
-          <h3>Managing</h3>
-          <p>5 years of experience</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="card">
-        <div class="card-front">
-          <img src="./image/pasang.jpg" alt="Pasang">
-          <h2>Pasang</h2>
-        </div>
-        <div class="card-back">
-          <h3>Accounting</h3>
-          <p>4 years of experience</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="card">
-        <div class="card-front">
-          <img src="./image/sonika.jpg" alt="Sonika">
-          <h2>Sonika</h2>
-        </div>
-        <div class="card-back">
-          <h3>Advertisement</h3>
-          <p>4 years of experience</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="card">
-        <div class="card-front">
-          <img src="./image/bipana.png" alt="Bipana">
-          <h2>Bipana</h2>
-        </div>
-        <div class="card-back">
-          <h3>Operations</h3>
-          <p>4 years of experience</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="card">
-        <div class="card-front">
-          <img src="./image/jamu.jpg" alt="Inshika">
-          <h2>Inshika</h2>
-        </div>
-        <div class="card-back">
-          <h3>Product Showcasing</h3>
-          <p>4 years of experience</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="partners">
+ <div class="part"> 
+  <h2>Our Brand Partners</h2>
+ </div>
+  <a href="https://www.Jordan.com" target="_blank">
+  <img src="./image/jordan.webp" alt="nike"></a>
+  <a href="https://www.Amazon.com" target="_blank">
+  <img src="./image/amazon.webp" alt="amazon"></a>
+  <a href="https://www.Daraz.com" target="_blank">
+  <img src="./image/daraz.webp" alt="daraz"></a>
+  <a href="https://www.LACOSTE.com" target="_blank">
+  <img src="./image/lacoste.webp" alt="lascoste"></a>
+  <a href="https://www.puma.com" target="_blank">
+  <img src="./image/puma.webp" alt="puma"></a>
+   <a href="https://www.Gucci.com" target="_blank">
+  <img src="./image/gucci.webp" alt="gucci"></a>
 </section>
-
 <section class="contact" id="contact">
-  <div class="heading">
-    <h2>Contact Us</h2>
-    <br>
-    <p>We'd love to hear from you</p>
-  </div>
-
-  <div class="contact-container">
-    <div class="contact-info">
-      <h2>Get In Touch</h2>
-      <p>Feel free to reach out to us via phone, email, or visit our store.</p>
-      <div class="address">
-        <p><i class="bx bxs-map"></i> B76 Street, Maharajgunj - Kathmandu</p>
-        <p><i class="bx bxs-phone"></i> +9753975398</p>
-        <p><i class="bx bxs-envelope"></i> bipinjasa@easy.com</p>
-      </div>
-      <div class="social">
-        <a href="#"><i class="bx bxl-facebook"></i></a>
-        <a href="#"><i class="bx bxl-instagram"></i></a>
-        <a href="#"><i class="bx bxl-tiktok"></i></a>
-        <a href="#"><i class="bx bxl-whatsapp"></i></a>
-      </div>
+  <div class="contact-wrapper">
+    <div class="left-content">
+      <img src="./image/contact-img.jpg" alt=" Image" />
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or want to reach out, please fill the form. We would love to hear from you!</p>
     </div>
 
-    <div class="contact-form">
-      <form action="#">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea cols="30" rows="10" placeholder="Write your message here" required></textarea>
-        <input type="submit" value="Submit" class="btn">
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
       </form>
     </div>
   </div>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Brave Search Premium</a></li>
+          <li><a href="#">Brave Search Help</a></li>
+          <li><a href="#">Transparency Report</a></li>
+          <li><a href="#">Report a Security Issue</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="#">Brave Browser</a></li>
+          <li><a href="#">Brave Wallet</a></li>
+          <li><a href="#">Brave Firewall + VPN</a></li>
+          <li><a href="#">Brave News</a></li>
+          <li><a href="#">Brave Search API</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-inner">
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </footer>
+
 </section>
-
-<footer class="copyright">
-  <p>&copy; 2025 <span>Anuma8Tech</span> All rights reserved</p>
-</footer>
-
+</section>
 <script src="script.js"></script>
 </body>
 </html>
