@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us</title>
 
-  <!-- Google Fonts & Font Awesome -->
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <style>
+ <style>
     * {
       box-sizing: border-box;
       margin: 0;
@@ -24,15 +24,13 @@
       color: #fff;
       display: flex;
       flex-direction: column;
-      align-items: center;
       min-height: 100vh;
       padding: 20px;
       gap: 40px;
     }
 
     .contact-wrapper {
-      display: flex;
-      flex-wrap: wrap;
+        display: flex;
       justify-content: center;
       gap: 40px;
       width: 100%;
@@ -43,29 +41,40 @@
       max-width: 350px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      color: #0ff;
-      text-align: center;
+      color: rgb(113, 132, 198);
+        cursor: pointer;
     }
 
     .left-content img {
-      width: 100%;
+      width: 300px;
+      height:150px;
       border-radius: 12px;
       box-shadow: 0 0 15px #0ff;
+      justify-content: left;
     }
 
-    .left-content h2 {
+    .left-content h1 {
       margin: 30px 0 12px;
       font-size: 28px;
-      text-shadow: 0 0 8px #0ff;
+      text-shadow: 0 0 8px rgb(233, 38, 3);
     }
 
     .left-content p {
       font-size: 16px;
-      color: #a0f0f0;
+      color: #f5f8f8;
       line-height: 1.4;
+      margin-bottom: 30px;
+      text-align: left;
     }
 
+    .address {
+      display: flex;
+      flex-direction: column;
+      color: rgb(156, 247, 188);
+        cursor: pointer;
+        margin-top: 20px;
+        margin-top: 30px;
+    }
     .contact-container {
       background: #1a1a1a;
       padding: 40px;
@@ -73,6 +82,7 @@
       box-shadow: 0 0 20px #0ff;
       width: 100%;
       max-width: 500px;
+      float: right;
     }
 
     .contact-container h1 {
@@ -88,7 +98,7 @@
     .form-group label {
       display: block;
       margin-bottom: 6px;
-      color: #ccc;
+      color: #fffefe;
     }
 
     .form-group input,
@@ -105,7 +115,7 @@
 
     .form-group input:focus,
     .form-group textarea:focus {
-      box-shadow: 0 0 10px #0ff;
+      box-shadow: 0 0 10px rgb(255, 0, 238);
     }
 
     button {
@@ -122,7 +132,7 @@
     }
 
     button:hover {
-      background-color: #00e6e6;
+      background-color: #5100e6;
     }
 
     /* Footer styles */
@@ -143,7 +153,7 @@
     }
 
     .footer-col h3 {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
       color: #fff;
     }
@@ -158,9 +168,9 @@
     }
 
     .footer-col ul li a {
-      color: #ccc;
+      color: #f1eeee;
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.75rem;
       transition: color 0.3s ease;
     }
 
@@ -171,8 +181,9 @@
     .social {
       display: flex;
       gap: 1.4rem;
-      justify-content: center;
-      margin-top: 2rem;
+      justify-content: left;
+      margin-top: 3rem;
+      margin-bottom: 30px;
     }
 
     .social a {
@@ -182,7 +193,7 @@
     }
 
     .social a:hover {
-      color: #0ff;
+      color: rgb(255, 0, 200);
     }
 
     @media (max-width: 900px) {
@@ -191,15 +202,75 @@
         align-items: center;
       }
     }
+    .copyright {
+      text-align: center;
+        padding: 10px;
+      color: #0b0000;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .copyright span {
+      color: rgb(70, 43, 243);
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      margin-top: 100px;
+    }
   </style>
 </head>
 <body>
 
+<header>
+  <nav class="navbar">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="logo-img">
+      <img src="./image/girl-logo.jpg" alt="logo"/>
+    </div>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Shop <i class='bx bx-chevron-down'></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="shop.html">All</a></li>
+          <li><a href="occasion.html">Weddings</a></li>
+          <li><a href="Kids-girl.html">Kids-girls</a></li>
+          <li><a href="Kids-boy.html">Kids-boys</a></li>
+          <li><a href="girls.html">Girls</a></li>
+          <li><a href="boys.html">Boys</a></li>
+          <li><a href="cultural.html">Cultural</a></li>
+        </ul>
+      </li>
+
+      <li><a href="member.html">Member</a></li>
+      <li><a href="patner.html">Our Partner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
   <div class="contact-wrapper">
     <div class="left-content">
-      <img src="./image/contact-img.jpg" alt="Contact Image" />
-      <h2>Get in Touch</h2>
-      <p>If you have any questions or want to reach out, please fill the form. We would love to hear from you!</p>
+     <h1>Get in Touch</h1>
+      <p><i>If you have any questions or want to reach out, please fill the form. We'd love to hear your fashion thoughts! 💖</i></p>
+        <img src="./image/contact-us.webp" alt="Contact Image" />
+
+        <div class="address">
+      <h3>📍 Visit Us</h3>
+      <p><i class="bx bxs-map"></i> B76 Street, Maharajgunj - Kathmandu</p>
+      
+      <h3>📞 Call or Text</h3>
+      <p><i class="bx bxs-phone"></i> +9750997538</p>
+      
+      <h3>📧 Email Us</h3>
+      <p><i class="bx bxs-envelope"></i> bipinjasa@easy.com</p>
+        </div>
     </div>
 
     <div class="contact-container">
@@ -253,21 +324,48 @@
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms of Use</a></li>
         </ul>
+        <br>
+        <br>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+      #map {
+        height: 100vh;
+      }
+    </style>
+<body>
+
+    <div id="map" style="width: 300px; height: 150px"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      const map = L.map("map").setView([27.7172, 85.324], 12); // Kathmandu
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      L.marker([27.7172, 85.324])
+        .addTo(map)
+        .bindPopup("Kathmandu")
+        .openPopup();
+    </script>
       </div>
     </div>
 
-    <div class="footer-inner" style="padding-top: 0;">
-      <div class="social">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-      </div>
-    </div>
+    
+<footer class="footer-inner" style="padding: 0;">
+        <div class="social">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href=" https://www.github.com/"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
   </footer>
-
-
+<footer class="copyright">
+  <p>&copy; 2025 <span>ShopHub.</span> All Rights Reserved.</p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
