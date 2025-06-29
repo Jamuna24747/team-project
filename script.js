@@ -1,16 +1,12 @@
+ //  hamburger toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navlinks');
 
-  // Hamburger toggle
-  document.getElementById('hamburger').addEventListener('click', function () {
-    document.getElementById('navlinks').classList.toggle('active');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
   });
 
-  // Dropdown toggle
-  const dropdown = document.querySelector(".dropdown");
-  dropdown.addEventListener("click", function () {
-    this.classList.toggle("show-dropdown");
-  });
-
-//*weeding//
+//*wedding//
   function goToShop() {
       alert("Navigating to wedding collection...");
       // window.location.href = "wedding-collection.html";
