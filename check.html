@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Footer Demo with Products</title>
+
+  <!-- Google Font & Font-Awesome for icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand-dark: #000;
+      --brand-light: #fff;
+      --brand-accent: #ff69b4;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+
+    .filter-bar{
+      display:flex;
+      gap:1rem;
+      padding:1rem 2rem;
+      flex-wrap:wrap;
+    }
+    .filter{
+      background:#f2f2f2;
+      border:none;
+      border-radius:25px;
+      padding:0.4rem 1.2rem;
+      font-size:0.9rem;
+      display:flex;
+      align-items:center;
+      gap:0.5rem;
+      cursor:pointer;
+      transition:.25s;
+    }
+    .filter:hover{
+      background:#e6e6e6;
+    }
+
+    .products{
+      background: #fff0f5;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .products h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #ff1493;
+    }
+    .product-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .product{
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .product:hover{
+      transform: translateY(-5px);
+    }
+    .product img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h3{
+      font-size: 1rem;
+      padding: 1rem;
+      color: #333;
+    }
+
+    footer{
+      background:var(--brand-dark);
+      color:var(--brand-light);
+    }
+    .footer-inner{
+      max-width:1200px;
+      margin:auto;
+      padding:3rem 1.5rem 4.5rem;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:2.5rem;
+    }
+    .footer-col h3{
+      font-size:1.1rem;
+      margin-bottom:1.2rem;
+    }
+    .footer-col ul{list-style:none;}
+    .footer-col li+li{margin-top:0.65rem;}
+    .footer-col a{
+      color:inherit;
+      text-decoration:none;
+      font-size:0.95rem;
+      transition:.25s;
+    }
+    .footer-col a:hover{color:var(--brand-accent);}
+
+    .badge-stack{
+      display:flex;
+      flex-direction:column;
+      gap:1.4rem;
+      align-items:flex-start;
+    }
+    .badge-stack img{
+      max-width:150px;
+      height:auto;
+      object-fit:contain;
+      filter:brightness(0) invert(1);
+    }
+    .badge-stack img.student-beans{
+      filter:none;
+      max-width:180px;
+    }
+
+    .social{
+      margin-top:2.5rem;
+      display:flex;
+      gap:1.4rem;
+    }
+    .social a{
+      font-size:1.15rem;
+      color:var(--brand-light);
+      transition:.25s;
+    }
+    .social a:hover{
+      color:var(--brand-accent);
+    }
+
+    .chat-btn{
+      position:fixed;
+      bottom:2rem;
+      right:2rem;
+      width:64px;height:64px;
+      border-radius:50%;
+      background:#00bcd4;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:1.65rem;
+      color:#fff;
+      box-shadow:0 4px 12px rgba(0,0,0,.3);
+      cursor:pointer;
+      transition:.3s;
+      z-index:999;
+    }
+    .chat-btn:hover{transform:scale(1.08);}
+  </style>
+</head>
+<body>
+
+  <section class="filter-bar">
+    <button class="filter">Animals <i class="fa-solid fa-chevron-down"></i></button>
+    <button class="filter">Sub Animals <i class="fa-solid fa-chevron-down"></i></button>
+    <button class="filter">Brand <i class="fa-solid fa-chevron-down"></i></button>
+  </section>
+
+  <!-- ============ PRODUCTS SECTION ============ -->
+  <section class="products">
+    <h2>Explore Our Fancy Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://dummyimage.com/300x200/ff69b4/fff&text=Unicorn+Set" alt="Unicorn Set">
+        <h3>Unicorn Fancy Dress</h3>
+      </div>
+      <div class="product">
+        <img src="https://dummyimage.com/300x200/ffb6c1/000&text=Fairy+Wings" alt="Fairy Wings">
+        <h3>Fairy Wings Costume</h3>
+      </div>
+      <div class="product">
+        <img src="https://dummyimage.com/300x200/f08080/fff&text=Pink+Princess" alt="Pink Princess">
+        <h3>Pink Princess Gown</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Smiffys</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Corporate &amp; CSR</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Modern Slavery Statement</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Size Guides</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Klarna FAQs</a></li>
+          <li><a href="#">Delivery &amp; Returns</a></li>
+          <li><a href="#">Safety</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+
+      <div class="badge-stack">
+        <img src="https://dummyimage.com/200x60/000/fff&text=reGAIN+app" alt="reGAIN app">
+        <img src="https://dummyimage.com/150x60/000/fff&text=POC+Member" alt="Product of Change Member">
+        <img class="student-beans" src="https://dummyimage.com/220x60/814cff/ffffff&text=StudentBeans" alt="Student Beans">
+      </div>
+    </div>
+
+    <div class="footer-inner" style="padding-top:0">
+      <div class="social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-btn" title="Chat with us">
+    <i class="fa-solid fa-comment-dots"></i>
+  </div>
+
+</body>
+</html>
