@@ -6,11 +6,11 @@
     navLinks.classList.toggle('show');
   });
 
-//*wedding//
-  function goToShop() {
+function goToShop() {
       alert("Navigating to wedding collection...");
-      // window.location.href = "wedding-collection.html";
+
     }
+
 
   // Get all cart icons inside the shop
   const cartIcons = document.querySelectorAll(".card-fronts .bx");
